@@ -436,7 +436,9 @@ vertical-align: middle;
 body.preloader-site {
   overflow: hidden;
 }
-
+.form{
+  height: 160vh;
+}
 .preloader-wrapper {
   height: 100%;
   width: 100%;
@@ -463,7 +465,6 @@ body.preloader-site {
   font-size: 1.2rem;
   border-radius: 10px;
   border: 2px solid #59a543;
-  width:  210px;
   height: 65px;
   align-items: center;
   margin: 1rem;
@@ -472,7 +473,7 @@ body.preloader-site {
 
 .btn-whatsapp {
   background-color: #6cc751;
-  width:  210px;
+  width:  auto;
   height: 65px;
   color: white;
   font-size: 1.2rem;
