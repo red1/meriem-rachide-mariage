@@ -10,12 +10,13 @@
     <meta property="og:title" content="Meriem Belhamissi & Rachide Mougammadou - 1er Juillet 2023 - Mairie de Tremblay en France">
     <meta property="og:description" content="Meriem Belhamissi & Rachide Mougammadou - 1er Juillet 2023 - Mairie de Tremblay en France">
     <meta property="og:locale" content="id_ID" />
-    <meta property="og:image" content="image/sherly-daeng-wedding-thumbnail.png">
+    <meta property="og:image" content="image/rachmer.jpg">
     <meta property="og:url" content="index.html">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/menikah.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
     <script
@@ -24,6 +25,8 @@
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
+
     <link rel="icon" type="image/png" href="image/favicon.png" />
   </head>
 
@@ -68,6 +71,11 @@
                   RSVP - Confirmer votre venue
                 </a>
               </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#contact">
+                  Contact
+                </a>
+              </div>
             </div>
           </div>
         </nav>
@@ -97,7 +105,7 @@
               <li class="separator">:</li>
               <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
               <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+              <li><span class="seconds">00</span><p class="seconds_text">Secondes</p></li>
             </ul>
             <div class="spasi">
             </div>
@@ -108,15 +116,15 @@
               var year = now.getFullYear() + 1;
           
               var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '07/01/2023 17:00:00';
+              var harih = '07/01/2023 14:20:00';
 
               $('#hitungmundur').countdown({
                 date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Jours',
+                offset: +1, // TODO Your Timezone Offset
+                day: 'Jour',
                 days: 'Jours'
               }, function () {
-                alert('Done!');
+                alert('Just Married !');
               });
             </script>  
           </div>
@@ -140,6 +148,9 @@
                   </li>
                   <li>
                     <a href="#rsvp">RSVP - Confirmation</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contactez Nous</a>
                   </li>
                 </ul>
               </div>
@@ -170,13 +181,39 @@
         <span class="space40px"></span>
         <span class="space40px"></span>
 
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            Mlle Meriem Belhamissi
+        <div data-aos="fade-up" data-aos-easing="linear" class="column is-7-desktop m-auto">
+          <div class="columns parent-middle">
+            <div class="column is-4 child-middle medaillon relative">
+              <div class="video video-meriem">
+                <video class="thevideo" loop preload="none">
+                  <source src="image/meriem.mp4" type="video/mp4"  muted >
+                </video>
+              </div>
+              <img class="flowers" src="image/n508.svg">
+            </div>
+            
+            <div class="column child-middle">
+              <div class="nama-lengkap" >
+                Mlle Meriem Belhamissi
+              </div>
+            </div>
           </div>
-          <div class="ampersand">&</div>
-          <div class="nama-lengkap">
-           Mr Mougammadou Rachide
+          <div class="ampersand">&</div>          
+          <div class="columns parent-middle">
+            <div class="column">
+              <div class="nama-lengkap child-middle" >
+                Mr Mougammadou Rachide
+              </div>
+            </div>
+            <div class="column is-4 child-middle medaillon relative">
+              <div class="video video-rachide">
+                <video class="thevideo" loop preload="none" muted >
+                  <source src="image/rachide.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img class="flowers" src="image/n508.svg">
+
+            </div>
           </div>
            
         </div>
@@ -210,9 +247,9 @@
             <div class="column is-4 has-vertically-aligned-content">
             
               <p class="waktu is-larger has-text-centered">
-                Vers:
+                Vers
                 <br>
-                <strong>17:00</strong>
+                <strong>14:00</strong>
               </p>
             
             </div>
@@ -222,7 +259,7 @@
               <h1 class="waktu is-larger has-text-centered">
                 Rendez-Vous Devant la Mairie à 
                 <br>
-                <strong>16:30</strong>
+                <strong>13:30</strong>
               </h1>
               
               
@@ -232,7 +269,7 @@
         </div>
         <div class="space40px"></div>
         <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+de+Meriem+%26+Rachide&details=Mariage+de+Meriem+%26+Rachide%0AMairie+de+Tremblay+en+France&location=Mairie+de+Tremblay+en+France++++++++++++++++%0A18+boulevard+de+l%27H%C3%B4tel-de-Ville+%0A93290+Tremblay-en-France&dates=20230630T230200Z" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+          <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+de+Meriem+%26+Rachide&details=Mariage+de+Meriem+%26+Rachide%0AMairie+de+Tremblay+en+France%0A18+boulevard+de+l%27H%C3%B4tel-de-Ville+%0A93290+Tremblay-en-France&location=Mairie+de+Tremblay+en+France%0A18+boulevard+de+l%27H%C3%B4tel-de-Ville+%0A93290+Tremblay-en-France&dates=20230701T113000Z" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
             <i class="far fa-calendar-plus"></i>
             &nbsp;&nbsp;Google Calendar
           </a>
@@ -248,11 +285,12 @@
             <p class="tempat is-larger has-text-centered">
               à la <a href="https://goo.gl/maps/RNXAkunBnwqFKZRV8
               ">Mairie de Tremblay en France
-              </a>
+              
               <br>
               18 boulevard de l'Hôtel-de-Ville 
               <br>
               93290 Tremblay-en-France
+              </a>
             </p>
           </div>
           <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
@@ -283,13 +321,12 @@
                 Meriem et Rachide
                 <br>
                 Samedi 1er juillet 2023
-                à 12h00
+                à 13h30
                <br> 
-                à la <a href="https://goo.gl/maps/RNXAkunBnwqFKZRV8">Mairie de Tremblay en France
-                </a><br>
-                18 boulevard de l'Hôtel-de-Ville 
+                à la <a href="https://goo.gl/maps/RNXAkunBnwqFKZRV8">Mairie de Tremblay en France</a><br>
+                <a href="https://goo.gl/maps/RNXAkunBnwqFKZRV8">18 boulevard de l'Hôtel-de-Ville 
                 <br>
-                93290 Tremblay-en-France
+                93290 Tremblay-en-France</a>
                 <br>
                 Nous serions ravis de vous compter parmi nos invités pour célébrer ce jour si important pour nous.
                 <br>
@@ -304,27 +341,41 @@
                 Au plaisir de vous voir!
                 <br>
                 <br>
-                Meriem et Rachide
+                <span class="names is-dark">Meriem et Rachide</span>
      
              <br>
              <br><br>
-                <a href="https://api.whatsapp.com/send?phone=+33674719553&text=Salut%20Meriem%2C%20Je%20serais%20pr%C3%A9sent(e)%20%C3%A0%20ton%20Mariage%2C%20Compte%20sur%20moi%2C%20Bisous%20!&source=&data=" class="button btn-whatsapp" data-aos="fade-right">
-                  <i class="fab fa-whatsapp"></i>
-                  &nbsp;&nbsp;Envoyer un WhatsApp à Meriem
-                </a>
-            
-            
-                <a href="https://api.whatsapp.com/send?phone=+33623448124&text=Salut%20Meriem%2C%20Je%20serais%20pr%C3%A9sent(e)%20%C3%A0%20ton%20Mariage%2C%20Compte%20sur%20moi%2C%20Bisous%20!&source=&data=" class="button btn-whatsapp" data-aos="fade-left">
-                  <i class="fab fa-whatsapp"></i>
-                  &nbsp;&nbsp; Envoyer un WhatsApp à Rachide
-                </a >
-              <div class="space40px"></div>
+            </p>
+             <div id="contact" class="">
+             <div class="parent-middle">
+              <a href="https://api.whatsapp.com/send?phone=+33674719553&text=Salut%20Meriem%2C%20Je%20serais%20pr%C3%A9sent(e)%20%C3%A0%20ton%20Mariage%2C%20Compte%20sur%20moi%2C%20Bisous%20!&source=&data=" class="button column is-4 btn-whatsapp" data-aos="fade-right">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp;Envoyer un WhatsApp <br>à Meriem
+              </a>
+          
+          
+              <a href="https://api.whatsapp.com/send?phone=+33623448124&text=Salut%20Meriem%2C%20Je%20serais%20pr%C3%A9sent(e)%20%C3%A0%20ton%20Mariage%2C%20Compte%20sur%20moi%2C%20Bisous%20!&source=&data=" class="button column is-4 btn-whatsapp" data-aos="fade-left">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp; Envoyer un WhatsApp <br>à Rachide
+              </a >
 
+             </div>
+             
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <a href="mailto:rachide.meriem@gmail.com" class="button btn-cta" data-aos="fade-left">
+                  <i class="fa fa-envelope"></i>
+                  &nbsp;&nbsp; Envoyer un email
+                </a> 
+              </div>
               <div class="space40px"></div>
               <div data-aos="fade-up" data-aos-easing="linear">
                 <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
               </div>
               <div class="space40px"></div>
+              
+            </div>
+            </div>
               <!-- <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
                 Kami yang berbahagia,
                 <br>
@@ -359,6 +410,7 @@
           <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
         </a>
       </div>
+     
     </div>
     <!-- End Footer -->
 
@@ -372,6 +424,38 @@
         easing: "ease-out",
         duration: 800,
       });
+      var sakura = new Sakura('body');
+      $('body').click( hideVideo );
+      var cip = $(".medaillon").each(function(i){ console.log(this); $(this).click( hoverVideo )});
+      console.log("cip", cip);
+
+      function hoverVideo(e) { 
+        e.stopImmediatePropagation();
+          // $(this).find( "video" ).css('visibility', 'visible').css("boder", "1px solid");
+          $(this).find( "video" ).get(0).muted = false;
+          var promise = $(this).find( "video" ).get(0).play();
+          $('video', this).css('visibility', 'visible').css("boder", "1px solid");
+
+          if (promise !== undefined) {
+            promise.then(_ => {
+              // Autoplay started!
+            }).catch(error => {
+              $(this).find( "video" ).get(0).muted = false;
+              $(this).find( "video" ).get(0).play();
+            });
+          }
+
+      }
+
+      function hideVideo(e) {
+        $(document).find( "video" ).each(function(i){ 
+          $(this).get(0).pause();
+          $(this).css('visibility', 'hidden').css("boder", "none")
+        }
+        );
+      }
+      $(window).scroll( function(e){ hideVideo(e);} );
+
     </script>
   </body>
 </html>
