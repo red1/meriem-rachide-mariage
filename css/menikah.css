@@ -468,6 +468,7 @@ body.preloader-site {
   height: 65px;
   align-items: center;
   margin: 1rem;
+  zoom: 0.75;
 }
 
 
