@@ -81,7 +81,8 @@ body{
   background-image: url("../image/rachmer.jpg");
   background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/rachmer.jpg") no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
@@ -124,6 +125,7 @@ body{
   }
   .hero{
     background-position-y: 36%;
+    background-size: contain;
   }
 }
 
