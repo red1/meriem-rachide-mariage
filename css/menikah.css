@@ -51,6 +51,9 @@ body{
 .flowers{
   z-index: 222222;
 }
+
+
+
 .video{
   box-shadow: 0 0 8px 8px white inset;
 
@@ -66,6 +69,14 @@ body{
     background-position-x: 48px;
   
 }
+
+
+
+.safari .video{
+    top: -31px;
+    height: 273px !important;
+  }
+
 .video video{
   height : 100%;
   width: 100%;

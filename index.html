@@ -457,6 +457,9 @@
         );
       }
       $(window).scroll( function(e){ hideVideo(e);} );
+      if (/Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor)){
+        $("body").addClass("safari");
+      }
 
     </script>
   </body>
