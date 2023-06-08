@@ -15,8 +15,9 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link rel="stylesheet" href="css/jquery.googleslides.css" />
     <link href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css" rel="stylesheet">
-    
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/menikah.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
     <script
@@ -26,7 +27,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.js"></script>
-
+    <script src="js/jquery.googleslides.js"></script>
     <link rel="icon" type="image/png" href="image/favicon.png" />
   </head>
 
@@ -65,7 +66,12 @@
                   Localisation
                 </a>
               </div>
-            
+              <!-- <div class="navbar-item">
+                <a class="navbar-item" href="#hotel-section">
+                  La Réception
+                </a>
+              </div> -->
+              
               <div class="navbar-item">
                 <a class="navbar-item" href="#rsvp">
                   RSVP - Confirmer votre venue
@@ -74,6 +80,11 @@
               <div class="navbar-item">
                 <a class="navbar-item" href="#contact">
                   Contact
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#livre-or">
+                  Livre d'Or
                 </a>
               </div>
             </div>
@@ -147,12 +158,20 @@
                   <li>
                     <a href="#localisation">Localisation</a>
                   </li>
+                  <!-- <li>
+                    <a href="#hotel-section">La Réception</a>
+                  </li> -->
                   <li>
                     <a href="#rsvp">RSVP - Confirmation</a>
                   </li>
                   <li>
                     <a href="#contact">Contactez Nous</a>
                   </li>
+                  <li>
+                    <a href="#livre-or">Livre d'Or</a>
+                  </li>
+
+                  
                 </ul>
               </div>
             </div>
@@ -281,6 +300,8 @@
       <!-- Begin Lokasi Section -->
       <section class="section-darker" id="localisation" >
         <div class="container">
+          <div class="space40px"></div>
+
           <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
             <h1 class="title has-text-centered section-title">Localisation</h1>
             <p class="tempat is-larger has-text-centered">
@@ -307,6 +328,84 @@
         </div>
       </section>
       <!-- End Lokasi Content -->
+      <!-- <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="hotel-section">
+        
+        <div class="container">
+
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <div class="space40px"></div>
+
+            <h1 class="title has-text-centered section-title">La Réception   </h1>
+            <p class="tempat is-larger has-text-centered">
+              La réception se déroulera à 
+            <a href="https://goo.gl/maps/RNXAkunBnwqFKZRV8
+              ">l'Hôtel Holidays Inn CDG</a> à partir de <b>17h30</b> 
+              <br>             
+              <a href="https://goo.gl/maps/RNXAkunBnwqFKZRV8
+              ">Hôtel Holidays Inn CDG              
+              <br>
+              61 Rue Houdart
+              <br>95700 Roissy-en-France              
+              </a>
+              <br>Tel : (+33)(0)184280700
+              <br>
+              <a class="button btn-cta" target="_blank" href="https://www.ihg.com/holidayinn/hotels/gb/en/roissy-en-france/parap/hoteldetail?cm_mmc=GoogleMaps-_-HI-_-FR-_-PARAP">Site Web</a>                            
+            </p>
+          </div>
+          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+            <div class="columns parent-middle">
+                <div class="column">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20936.759043387447!2d2.476446032524114!3d49.00877986602673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e615025050d325%3A0xdcb3634b761b4250!2sHoliday%20Inn%20Paris%20-%20Cdg%20Airport%2C%20an%20IHG%20Hotel!5e0!3m2!1sfr!2sfr!4v1686222101961!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="column">
+                <div class="columns">
+                  <div class="column is-4">
+                    <img src="https://digital.ihg.com/is/image/ihg/holiday-inn-roissy-en-france-7424725231-3x2" data-zoomable alt="Hotel 1" />
+                  </div>
+                  <div class="column is-4">
+                    <img src="https://digital.ihg.com/is/image/ihg/holiday-inn-roissy-en-france-7439275503-3x2" data-zoomable alt="Hotel 2" />
+                  </div>
+                  <div class="column is-4">
+                    <img src="https://digital.ihg.com/is/image/ihg/holiday-inn-roissy-en-france-7424720159-3x2" data-zoomable alt="Hotel 3" />
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="column is-4">
+                    <img src="https://digital.ihg.com/is/image/ihg/holiday-inn-roissy-en-france-7439255667-3x2" data-zoomable alt="Hotel 4" />
+                  </div>
+                  <div class="column is-4">
+                    <img src="https://digital.ihg.com/is/image/ihg/holiday-inn-roissy-en-france-8076501055-3x2" data-zoomable alt="Hotel 5" />
+                  </div>
+                  <div class="column is-4">
+                    <img src="https://digital.ihg.com/is/image/ihg/holiday-inn-roissy-en-france-8076501080-3x2" data-zoomable alt="Hotel 6" />
+                  </div>
+                </div>
+                <p class="bodytext">
+                  Possibilité de réserver une chambre sur place avec offre négociée pour ce faire indiquez ce choix dans le formulaire et contactez Meriem
+                </p>
+            </div>
+            
+            </div>
+          </div>
+          <div class="space40px"></div>
+          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <a href="https://goo.gl/maps/4QcGYQPue833BEHDA" class="button btn-cta" target="_blank" data-aos="zoom-in">
+              <i class="far fa-directions"></i>
+              &nbsp;&nbsp;Google Maps
+            </a>
+            <a  class="button btn-cta" target="_blank" href="https://www.ihg.com/holidayinn/hotels/gb/en/roissy-en-france/parap/hoteldetail?cm_mmc=GoogleMaps-_-HI-_-FR-_-PARAP">Site Web</a>                            
+            
+          </div>
+          <div class="space40px"></div>
+
+          <h2 class="nama-lengkap">Programme de la soirée</h2><br>
+          <div class="column is-8 parent-middle mx-auto ">
+            <img class="" src="image/programme.png" data-zoomable alt="Hotel 1" />
+          </div>
+          <div class="space40px"></div>
+
+        </div>
+      </section> -->
 
       <!-- Begin RSVP Content -->
       <section class="section-dark contact" id="rsvp">
@@ -396,6 +495,39 @@
         </div>
       </section>
       <!-- End RSVP Content -->
+
+      <section class="section-light regular-section has-text-centered has-vertically-aligned-content" id="livre-or">
+        <div class="space40px"></div>
+
+        <div class="container">
+          <h2 class="nama-lengkap">Livre d'Or </h2>
+      <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://https-meriem-rachide-fr.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+        </section>
+        <div class="space40px"></div>
+
+        <div class="space40px"></div>
+        <div id="album"></div>
+        <div class="space40px"></div>
+
     </div>
     <!-- End Main Content -->
 
@@ -460,7 +592,8 @@
       if (/Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor)){
         $("body").addClass("safari");
       }
-
+      mediumZoom('[data-zoomable]');
+      $('#album').googleslides({ albumid: 'WvKFmqdhXsd3bCzh6' });
     </script>
   </body>
 </html>
