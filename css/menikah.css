@@ -562,13 +562,12 @@ body.preloader-site {
 }
 
 
-.btn-cta:hover {
+.btn-cta:hover, .btn-cta2:hover, .btn-cta3:hover  {
   color:white;
   background-color: #bf7877;
   font-size: 1.2rem;
   border-radius: 10px;
   border: 2px solid #bf7877;
-  width:  210px;
   height: 65px;
   align-items: center;
   margin: 1rem;
@@ -577,6 +576,30 @@ body.preloader-site {
 .btn-cta {
   background-color: #996E6D;
   width:  210px;
+  height: 65px;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid #996E6D;
+  border-radius: 10px;
+  align-items: center;
+  margin: 1rem;
+}
+
+.btn-cta2 {
+  background-color: #edd5d5;
+  min-width:  210px;
+  height: 65px;
+  color: rgb(90, 90, 90);
+  font-size: 1.2rem;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  align-items: center;
+  margin: 1rem;
+}
+
+.btn-cta3 {
+  background-color: #e7a1a0;
+  min-width:  210px;
   height: 65px;
   color: white;
   font-size: 1.2rem;
