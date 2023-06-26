@@ -88,6 +88,21 @@ body{
   min-height: 250px;
 }
 
+.cluster-iframe
+ {
+  position: relative;
+  display: block;
+}
+.cluster-iframe:after {
+  content: "here";
+  display:block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .hero, 
 .photos {
   background-image: url("../image/rachmer.jpg");
