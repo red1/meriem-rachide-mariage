@@ -88,7 +88,8 @@ body{
   min-height: 250px;
 }
 
-.hero {
+.hero, 
+.photos {
   background-image: url("../image/rachmer.jpg");
   background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/rachmer.jpg") no-repeat;
   background-attachment: fixed;
@@ -99,6 +100,14 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+.photos{
+  background-image: url(https://source.unsplash.com/random/369×432/?camera);
+}
+
+.photos .title{
+  mix-blend-mode: color-dodge;
+  color: whitesmoke;
+}
 
 .hero .title{
   color: whitesmoke;
