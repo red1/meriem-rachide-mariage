@@ -94,7 +94,7 @@ body{
   display: block;
 }
 .cluster-iframe:after {
-  content: "here";
+  content: " ";
   display:block;
   height: 100%;
   width: 100%;
