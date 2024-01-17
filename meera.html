@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/jquery.googleslides.css" />
     <link href="https://cdn.jsdelivr.net/npm/sakura-js@1.1.1/dist/sakura.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="css/menikah.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
     <script
@@ -75,10 +77,73 @@
             <h2 class="title">Meera</h2>
             <h4 class="subtitle tempatwaktu">
                 Née le 14 Décembre 2023
+            </h4>
+            <style>
+              .gallery-container{
+                align-items: center;
+                justify-content: center;
+              }
+            </style>
                 <br/>
+                <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+
+                  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css">
+                  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css">
+                    <div class="gallery-container d-flex align-items-center justify-content-center columns" id="gallery-container">
+                    
+                      <a class="gallery-item column" data-src="image/meera.jpg">
+                        <img class="img-fluid" src="image/meera.jpg" />
+                      </a>
+                      <a class="gallery-item column" data-src="image/meera1.jpg">
+                        <img class="img-fluid" src="image/meera1.jpg" />
+                      </a>
+                      <a class="gallery-item column" data-src="image/meera2.jpg">
+                        <img class="img-fluid" src="image/meera2.jpg" />
+                      </a>
+                      <a class="gallery-item column" data-src="image/meera3.jpg">
+                        <img class="img-fluid" src="image/meera3.jpg" />
+                      </a>
+                      <a class="gallery-item column" data-src="image/meera1.jpg">
+                        <img class="img-fluid" src="image/meera4.jpg" />
+                      </a>
+                    </div>
+                  </div>
+                  <script  type="module">
+
+                    import lightGallery from "https://cdn.skypack.dev/lightgallery@2.0.0-beta.4";
+
+                    import lgZoom from "https://cdn.skypack.dev/lightgallery@2.0.0-beta.4/plugins/zoom";
+
+                    const $galleryContainer = document.getElementById("gallery-container");
+
+                    const customButtons = `<button type="button" id="lg-toolbar-prev" aria-label="Previous slide" class="lg-toolbar-prev lg-icon">  </button><button type="button" id="lg-toolbar-next" aria-label="Next slide" class="lg-toolbar-next lg-icon">  </button>`;
+
+                    $galleryContainer.addEventListener("lgInit", (event) => {
+                      const pluginInstance = event.detail.instance;
+
+                      // Note append and find are not jQuery methods
+                      // These are utility methods provided by lightGallery
+                      const $toolbar = pluginInstance.outer.find(".lg-toolbar");
+                      $toolbar.prepend(customButtons);
+                      document.getElementById("lg-toolbar-prev").addEventListener("click", () => {
+                        pluginInstance.goToPrevSlide();
+                      });
+                      document.getElementById("lg-toolbar-next").addEventListener("click", () => {
+                        pluginInstance.goToNextSlide();
+                      });
+                    });
+
+                    lightGallery($galleryContainer, {
+                      speed: 500,
+                      controls: false,
+                      plugins: [lgZoom]
+                    });
+
+
+</script>
                 <br/>
                 Ci-après, si vous le souhaitez <br>
-                 <a data-aos="fade-up" data-aos-easing="linear" class="button bouton-download btn-cta3 " href="#liste">🍼👶🏻 Liste de naissance de Meera💖 </a>
+                 <a data-aos="fade-up" data-aos-easing="linear" class="button bouton-download btn-cta3 " href="#liste">🍼👶🏻 Liste de naissance de Meera💖 </a><br/>
                  <a data-aos="fade-up" data-aos-easing="linear" class="button bouton-download btn-cta2 "  href="./index.html">
                   Accueil 
                 </a>
@@ -98,7 +163,6 @@
                   </p>
                 </div>
                    <br>
-            </h4>
           </div>
         
         </div>
@@ -322,7 +386,6 @@
         $("body").addClass("safari");
       }
       mediumZoom('[data-zoomable]');
-      $('#album').googleslides({ albumid: 'WvKFmqdhXsd3bCzh6' });
     </script>
   </body>
 </html>
